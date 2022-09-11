@@ -1,14 +1,25 @@
-<?php
-function pokemon_defense($arrayname, $limit_number){
-    foreach($arrayname as $pokemon_name){
-        if($pokemon_name[7] >= $limit_number){
-            echo($pokemon_name[1]."<br>");
-        }
-        
+<?php 
+  function hp_sum($pv) {
+    $sum_hp = 0;
+    foreach($pv as $pokemon) {
+      $sum_hp += $pokemon[5];
     }
 
-}
-$pv = array
+    return $sum_hp;
+  }
+
+  function ave_attack($pv) {
+    $total_atk = 0;
+    $total_pokemon = count($pv);
+
+    foreach($pv as $pokemon) {
+      $total_atk += $pokemon[6];
+    }
+    $ave_atk = $total_atk/$total_pokemon;
+    return $ave_atk;
+  }
+
+  $pv = array //2.
     (
         array(1, "Bulbasaur", "Grass", "Poison", "Overgrow", 45, 49, 49),
         array(2, "Ivysaur", "Grass", "Poison", "Overgrow", 60, 62, 63),
@@ -20,8 +31,11 @@ $pv = array
         array(8, "Wartotle", "Water", "N/A", "Torrent", 59, 63, 80),
         array(9, "Blastoise", "Water", "N/A", "Torrent", 79, 83, 100),
         array(10, "Caterpie", "Bug", "N/A", "Shield Dust", 50, 20, 55),
+        
     );
-    echo"Pokemons lists <br>";
-    echo "that have equal or more than 30 defense <br>";
-    pokemon_defense($pv, 30);//array parameter and limit number of 30
+
+    echo "Total HP: ".hp_sum($pv)."<br>";
+    echo "Average attack: ".ave_attack($pv);
 ?>
+
+
