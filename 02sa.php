@@ -33,7 +33,7 @@
         array(10, "Caterpie", "Bug", "N/A", "Shield Dust", 50, 20, 55),
         
     );
-
+    echo "Pokemon Attributes <br>";
     echo "Total HP: ".hp_sum($pv)."<br>";
     echo "Average attack: ".ave_attack($pv);
 ?>
