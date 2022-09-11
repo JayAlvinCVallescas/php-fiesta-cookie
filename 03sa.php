@@ -22,5 +22,5 @@ $pv = array
         array(10, "Caterpie", "Bug", "N/A", "Shield Dust", 50, 20, 55),
     );
     echo "Pokemon that have equal or more than 30 defense <br>";
-    pokemon_defense($pv, 30);//array parameter and limit number of 30
+    pokemon_defense($pv, 30);//Array parameter and limit number of 30
 ?>
