@@ -1,0 +1,7 @@
+Maam nag make po ako ng change sa favorite specie nag specify lang po ako ng index
+ni charizard baliktad po kasi sa pagkakaalam ko yung index ng dimensional array.
+
+ako po naka assign sa 1 and 2, si alvin po sa 3 and sa cover.
+ako lang po nakapag commit ng last, nireview ko lang po yung changes para mas maunawaan,
+dun din po nalaman na mali yung pagkaka declare ko kay charizard. Thank you po
+buti po nakita upon review
