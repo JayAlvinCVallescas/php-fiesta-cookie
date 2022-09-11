@@ -17,7 +17,7 @@
     print_r($pv); //3.
     echo '<br>' ; 
     echo(count($pv));  //4.
-    $favorite = $pv[0][6]; 
+    $favorite = $pv[6][1]; //charizard as favorite specie 
     echo '<br>' ; 
     echo "My favorite pokemon specie is ".$favorite."<br>"; //5.
     echo '<br>' ; 
